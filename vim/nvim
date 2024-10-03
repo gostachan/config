@@ -1,0 +1,23 @@
+# ~/.config/nvim/init.vim
+
+set number
+set ignorecase
+set smartcase
+inoremap jk <Esc>
+set hlsearch
+set tabstop=2
+set shiftwidth=2
+set expandtab
+set autoindent
+set textwidth=0
+set clipboard=unnamed
+set shell=/bin/zsh
+
+call plug#begin()
+Plug 'Mofiqul/vscode.nvim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'preservim/nerdtree'
+call plug#end()
+
+set background=dark
+colorscheme vscode

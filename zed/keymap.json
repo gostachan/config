@@ -1,0 +1,66 @@
+// ~/.config/zed/keymap.json
+
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+    {
+        "context": "Workspace",
+        "bindings": {
+            // common
+            "ctrl-l": "file_finder::Toggle",
+            "ctrl-o": "terminal_panel::ToggleFocus",
+            "ctrl-k ctrl-o": "workspace::ToggleBottomDock",
+            "ctrl-k ctrl-l": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "Terminal",
+        "bindings": {
+            "ctrl-w": "pane::CloseActiveItem",
+            // common
+            "ctrl-l": "file_finder::Toggle",
+            "ctrl-o": "terminal_panel::ToggleFocus",
+            "ctrl-k ctrl-o": "workspace::ToggleBottomDock",
+            "ctrl-k ctrl-l": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "Editor",
+        "bindings": {
+            "ctrl-k": null,
+            "ctrl-w": "pane::CloseActiveItem",
+            "ctrl-.": "pane::ActivateNextItem",
+            "ctrl-,": "pane::ActivatePrevItem",
+            "ctrl-u": "pane::SplitRight",
+            "cmd-.": "workspace::ActivateNextPane",
+            "cmd-,": "workspace::ActivatePreviousPane",
+            "ctrl-;": "vim::ToggleComments",
+            // common
+            "ctrl-l": "file_finder::Toggle",
+            "ctrl-o": "terminal_panel::ToggleFocus",
+            "ctrl-k ctrl-o": "workspace::ToggleBottomDock",
+            "ctrl-k ctrl-l": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "ProjectPanel",
+        "bindings": {
+            "f": "project_panel::NewFile",
+            "d": "project_panel::NewDirectory",
+            // common
+            "ctrl-l": "file_finder::Toggle",
+            "ctrl-o": "terminal_panel::ToggleFocus",
+            "ctrl-k ctrl-o": "workspace::ToggleBottomDock",
+            "ctrl-k ctrl-l": "workspace::ToggleLeftDock"
+        }
+    },
+    {
+        "context": "vim_mode == insert",
+        "bindings": { "j k": ["workspace::SendKeystrokes", "escape"] }
+    }
+]
