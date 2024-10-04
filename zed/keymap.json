@@ -1,5 +1,3 @@
-// ~/.config/zed/keymap.json
-
 // Zed keymap
 //
 // For information on binding keys, see the Zed
@@ -12,10 +10,11 @@
         "context": "Workspace",
         "bindings": {
             // common
-            "ctrl-l": "file_finder::Toggle",
+            "ctrl-m": "file_finder::Toggle",
+            "ctrl-l": "project_panel::ToggleFocus",
             "ctrl-o": "terminal_panel::ToggleFocus",
-            "ctrl-k ctrl-o": "workspace::ToggleBottomDock",
-            "ctrl-k ctrl-l": "workspace::ToggleLeftDock"
+            "ctrl-k ctrl-l": "workspace::ToggleLeftDock",
+            "ctrl-k ctrl-o": "workspace::ToggleBottomDock"
         }
     },
     {
@@ -23,10 +22,11 @@
         "bindings": {
             "ctrl-w": "pane::CloseActiveItem",
             // common
-            "ctrl-l": "file_finder::Toggle",
+            "ctrl-m": "file_finder::Toggle",
+            "ctrl-l": "project_panel::ToggleFocus",
             "ctrl-o": "terminal_panel::ToggleFocus",
-            "ctrl-k ctrl-o": "workspace::ToggleBottomDock",
-            "ctrl-k ctrl-l": "workspace::ToggleLeftDock"
+            "ctrl-k ctrl-l": "workspace::ToggleLeftDock",
+            "ctrl-k ctrl-o": "workspace::ToggleBottomDock"
         }
     },
     {
@@ -41,10 +41,11 @@
             "cmd-,": "workspace::ActivatePreviousPane",
             "ctrl-;": "vim::ToggleComments",
             // common
-            "ctrl-l": "file_finder::Toggle",
+            "ctrl-m": "file_finder::Toggle",
+            "ctrl-l": "project_panel::ToggleFocus",
             "ctrl-o": "terminal_panel::ToggleFocus",
-            "ctrl-k ctrl-o": "workspace::ToggleBottomDock",
-            "ctrl-k ctrl-l": "workspace::ToggleLeftDock"
+            "ctrl-k ctrl-l": "workspace::ToggleLeftDock",
+            "ctrl-k ctrl-o": "workspace::ToggleBottomDock"
         }
     },
     {
@@ -53,10 +54,11 @@
             "f": "project_panel::NewFile",
             "d": "project_panel::NewDirectory",
             // common
-            "ctrl-l": "file_finder::Toggle",
+            "ctrl-m": "file_finder::Toggle",
+            "ctrl-l": "project_panel::ToggleFocus",
             "ctrl-o": "terminal_panel::ToggleFocus",
-            "ctrl-k ctrl-o": "workspace::ToggleBottomDock",
-            "ctrl-k ctrl-l": "workspace::ToggleLeftDock"
+            "ctrl-k ctrl-l": "workspace::ToggleLeftDock",
+            "ctrl-k ctrl-o": "workspace::ToggleBottomDock"
         }
     },
     {

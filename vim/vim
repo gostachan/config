@@ -1,0 +1,35 @@
+set number
+" set guioptions+=a
+" set clipboard=unnamedplus
+" sudo apt install vim-athena
+set smartindent
+set autoindent
+set backspace=indent,eol,start
+set laststatus=2
+" set splitright
+
+nnoremap <C-l> <C-w>>
+nnoremap <C-h> <C-w><
+nnoremap <Leader>1 :tabfirst<CR>
+
+set ignorecase
+set smartcase
+set hlsearch
+set wrapscan
+set incsearch
+
+set showmatch
+inoremap { {}<LEFT>
+inoremap [ []<LEFT>
+inoremap ( ()<LEFT>
+inoremap " ""<LEFT>
+inoremap ' ''<LEFT>
+inoremap jk <Esc>
+
+if has('persistent_undo')
+    let undo_path = expand('~/.vim/undo')
+    exe 'set undodir=' .. undo_path
+    set undofile
+endif
+
+:command Cx w !cc -Wall -Wextra -Werror % -o tmp && ./tmp
