@@ -6,63 +6,77 @@
 // To see the default key bindings run `zed: open default keymap`
 // from the command palette.
 [
-    {
-        "context": "Workspace",
-        "bindings": {
-            // common
-            "ctrl-m": "file_finder::Toggle",
-            "ctrl-l": "project_panel::ToggleFocus",
-            "ctrl-o": "terminal_panel::ToggleFocus",
-            "ctrl-k ctrl-l": "workspace::ToggleLeftDock",
-            "ctrl-k ctrl-o": "workspace::ToggleBottomDock"
-        }
-    },
-    {
-        "context": "Terminal",
-        "bindings": {
-            "ctrl-w": "pane::CloseActiveItem",
-            // common
-            "ctrl-m": "file_finder::Toggle",
-            "ctrl-l": "project_panel::ToggleFocus",
-            "ctrl-o": "terminal_panel::ToggleFocus",
-            "ctrl-k ctrl-l": "workspace::ToggleLeftDock",
-            "ctrl-k ctrl-o": "workspace::ToggleBottomDock"
-        }
-    },
-    {
-        "context": "Editor",
-        "bindings": {
-            "ctrl-k": null,
-            "ctrl-w": "pane::CloseActiveItem",
-            "ctrl-.": "pane::ActivateNextItem",
-            "ctrl-,": "pane::ActivatePrevItem",
-            "ctrl-u": "pane::SplitRight",
-            "cmd-.": "workspace::ActivateNextPane",
-            "cmd-,": "workspace::ActivatePreviousPane",
-            "ctrl-;": "vim::ToggleComments",
-            // common
-            "ctrl-m": "file_finder::Toggle",
-            "ctrl-l": "project_panel::ToggleFocus",
-            "ctrl-o": "terminal_panel::ToggleFocus",
-            "ctrl-k ctrl-l": "workspace::ToggleLeftDock",
-            "ctrl-k ctrl-o": "workspace::ToggleBottomDock"
-        }
-    },
-    {
-        "context": "ProjectPanel",
-        "bindings": {
-            "f": "project_panel::NewFile",
-            "d": "project_panel::NewDirectory",
-            // common
-            "ctrl-m": "file_finder::Toggle",
-            "ctrl-l": "project_panel::ToggleFocus",
-            "ctrl-o": "terminal_panel::ToggleFocus",
-            "ctrl-k ctrl-l": "workspace::ToggleLeftDock",
-            "ctrl-k ctrl-o": "workspace::ToggleBottomDock"
-        }
-    },
-    {
-        "context": "vim_mode == insert",
-        "bindings": { "j k": ["workspace::SendKeystrokes", "escape"] }
-    }
+	{
+		"context": "Workspace",
+		"bindings": {
+			// common
+			"ctrl-m": "file_finder::Toggle",
+			"ctrl-l": "project_panel::ToggleFocus",
+			"ctrl-o": "terminal_panel::ToggleFocus",
+			"ctrl-k ctrl-l": "workspace::ToggleLeftDock",
+			"ctrl-k ctrl-o": "workspace::ToggleBottomDock"
+		}
+	},
+	{
+		"context": "Terminal",
+		"bindings": {
+			"ctrl-w": "pane::CloseActiveItem",
+			// common
+			"ctrl-m": "file_finder::Toggle",
+			"ctrl-l": "project_panel::ToggleFocus",
+			"ctrl-o": "terminal_panel::ToggleFocus",
+			"ctrl-k ctrl-l": "workspace::ToggleLeftDock",
+			"ctrl-k ctrl-o": "workspace::ToggleBottomDock"
+		}
+	},
+	{
+		"context": "Editor",
+		"bindings": {
+			"ctrl-k": null,
+			"ctrl-w": "pane::CloseActiveItem",
+			"ctrl-.": "pane::ActivateNextItem",
+			"ctrl-,": "pane::ActivatePrevItem",
+			"ctrl-u": "pane::SplitRight",
+			"cmd-.": "workspace::ActivateNextPane",
+			"cmd-,": "workspace::ActivatePreviousPane",
+			"ctrl-;": "vim::ToggleComments",
+			// common
+			"ctrl-m": "file_finder::Toggle",
+			"ctrl-l": "project_panel::ToggleFocus",
+			"ctrl-o": "terminal_panel::ToggleFocus",
+			"ctrl-k ctrl-l": "workspace::ToggleLeftDock",
+			"ctrl-k ctrl-o": "workspace::ToggleBottomDock"
+		}
+	},
+	{
+		"context": "ProjectPanel",
+		"bindings": {
+			"f": "project_panel::NewFile",
+			"d": "project_panel::NewDirectory",
+			// common
+			"ctrl-m": "file_finder::Toggle",
+			"ctrl-l": "project_panel::ToggleFocus",
+			"ctrl-o": "terminal_panel::ToggleFocus",
+			"ctrl-k ctrl-l": "workspace::ToggleLeftDock",
+			"ctrl-k ctrl-o": "workspace::ToggleBottomDock"
+		}
+	},
+	{
+		"context": "vim_mode == normal",
+		"bindings": {
+			"shift-k": "editor::MoveLineUp",
+			"shift-j": "editor::MoveLineDown"
+		}
+	},
+	{
+		"context": "vim_mode == visual",
+		"bindings": {
+			"shift-k": "editor::MoveLineUp",
+			"shift-j": "editor::MoveLineDown"
+		}
+	},
+	{
+		"context": "vim_mode == insert",
+		"bindings": { "j k": ["workspace::SendKeystrokes", "escape escape"] }
+	}
 ]
